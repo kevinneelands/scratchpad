@@ -1,0 +1,362 @@
+<div style="width:100%;margin:0px;padding:0px;">
+  <% panel_id="form_demo" %>
+  <form action="<%= panel_id %>" id="<%= panel_id %>">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
+
+    <div style="padding:20px;">
+      <div class="std_form_header">
+        <div class="full_width">
+          <div class="centered">
+            <strong>Opportunity Quest Employer Application</strong>
+          </div>
+        </div>
+      </div>
+      <div class="id_form_scroll" style="max-height:600px;overflow-x:auto;overflow-y:scroll;">
+        <div style="padding:0px;margin:0px;min-width:500px;">
+
+          <%# ------------------------------------------------- %>
+          <%# SECTION ONE ------------------------------------- %>
+          <%# ------------------------------------------------- %>
+          <div class="std_form_header">
+            <div>
+              SECTION 1. <strong>Employer Information</strong>
+            </div>
+          </div>
+
+          <div class="std_form_div">
+            <div class="two_third_width">
+              <div class="std_form_label">
+                Company Name:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="text"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+
+            <div class="third_width std_left_border">
+              <div class="std_form_label">
+                Application Date:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="date" />
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="std_form_div">
+            <div class="full_width">
+              <div class="std_form_label">
+                Applicant Contact Name & Title:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="text"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="std_form_div">
+            <div class="third_width">
+              <div class="std_form_label">
+                Date of Inception:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="date"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+
+            <div class="third_width std_left_border">
+              <div class="std_form_label">
+                Years in Business:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="number" min="0" max="1000"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+
+            <div class="third_width std_left_border">
+              <div class="std_form_label">
+                Years at this location:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="number" min="10" max="1000"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="std_form_div">
+            <div class="half_width">
+              <div class="std_form_label">
+                Number of Full-Time Employees:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="number" min="0" max="1000"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+
+            <div class="half_width std_left_border">
+              <div class="std_form_label">
+                Number of Part-Time Employees:
+              </div>
+              <div class="std_input_wrapper">
+                <input class="std_form_text reqd" type="number" min="0" max="1000"/>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+          </div>
+
+          <%# ------------------------------------------------- %>
+          <%# SECTION TWO ------------------------------------- %>
+          <%# ------------------------------------------------- %>
+          <div class="std_form_header">
+            <div>
+              SECTION 2. <strong>Internship Positions</strong>
+            </div>
+          </div>
+
+          <div class="std_form_div" style="font-family:arial;" >
+            In order to obtain interns, please provide position informations below.  Interns require a training plan with
+            specific training goals.  Include an certificates or credentials that interns will receive while engaged
+            with your company.  Other important stuff.
+          </div>
+
+
+            <div class="full_width">
+              <table class="simple_table_style">
+                <tr>
+                  <th>Job Title</th>
+                  <th>Number of Positions</th>
+                  <th>Name of Certificates</th>
+                  <th>Anticipated Start & Stop Dates</th>
+                  <th>Hourly Wage Range</th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="std_input_wrapper">
+                    <input class="std_form_text reqd" type="text"/>
+                    <span class="std_form_err_msg"><br>Cannot be blank!</span>
+                  </div>
+                  </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+
+
+          <%# ------------------------------------------------- %>
+          <%# SECTION THREE ----------------------------------- %>
+          <%# ------------------------------------------------- %>
+          <div class="std_form_header">
+            <div>
+              SECTION 3. <strong>Assurances</strong> (attach an explanation for any Yes answers in this section)
+            </div>
+          </div>
+
+          <div class="std_form_div">
+            <div class="full_width">
+              <div class="five_sixth_width std_form_label">
+                Has the company relocated to this location within the last 120 days?
+              </div>
+              <div class="sixth_width std_input_wrapper std_left_border">
+                <label class="std_radio_btn"><input type="radio" name="Q1" value="true" class="reqd">Yes&nbsp;&nbsp;&nbsp;</label>
+                <label class="std_radio_btn"><input type="radio" name="Q1" value="false">No</label>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="std_form_div">
+            <div class="full_width">
+              <div class="five_sixth_width std_form_label">
+                If the answer to the above question is Yes, did the company layoff any employee from its previous U.S.
+                location?
+              </div>
+              <div class="sixth_width std_input_wrapper std_left_border">
+                <label class="std_radio_btn"><input type="radio" name="Q2" value="true" class="reqd">Yes&nbsp;&nbsp;&nbsp;</label>
+                <label class="std_radio_btn"><input type="radio" name="Q2" value="false">No</label>
+                <span class="std_form_err_msg"><br>Cannot be blank!</span>
+              </div>
+            </div>
+          </div>
+
+
+          <%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Is the company currently being sold or currently merging with another company?", :name =>"Q5" } %>
+          <%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Are any of the employees of the company currently on layoff in the U.S.?", :name =>"Q6" } %>
+          <%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Has the company filed any Worker Adjustment and Retraining Act (WARN) Notices within the last 60 days?", :name =>"Q7" } %>
+          <%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Are any of the proposed training positions subject to a collective bargaining agreement?", :name =>"Q8" } %>
+          <%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Are there any outstanding or past wage and hour, health and safety, or discrimination complaints or adverse decisions against this company?", :name =>"Q9" } %>
+
+
+        </div>
+
+        <%# ------------------------------------------------- %>
+        <%# SECTION FOUR  ----------------------------------- %>
+        <%# ------------------------------------------------- %>
+        <div class="std_form_header">
+          <div>
+            SECTION 4. <strong>Capacity to Perform the Work</strong> (attach an explanation for a No answer in this
+            section)
+          </div>
+        </div>
+
+        <div class="std_form_div">
+          <div class="full_width">
+            <div class="five_sixth_width std_form_label"  >
+              Do you have the sufficient equipment, materials, and supervisory time and expertise to provide
+              the necessary internship learning?
+            </div>
+            <div class="sixth_width std_input_wrapper std_left_border" >
+              <label class="std_radio_btn"><input type="radio" name="Q3" value="true" class="reqd">Yes&nbsp;&nbsp;&nbsp;</label>
+              <label class="std_radio_btn"><input type="radio" name="Q3" value="false">No</label>
+              <span class="std_form_err_msg"><br>Cannot be blank!</span>
+            </div>
+          </div>
+        </div>
+
+        <%# ------------------------------------------------- %>
+        <%# SECTION FIVE  ----------------------------------- %>
+        <%# ------------------------------------------------- %>
+        <div class="std_form_header">
+          <div>
+            SECTION 5. <strong>Agreement to provide ongoing reporting documents</strong>
+          </div>
+        </div>
+
+        <div class="std_form_div">
+          <div class="full_width">
+            <div class="std_form_label">
+              Employer agrees to provide the following documentations CSNCFL.
+            </div>
+          </div>
+        </div>
+
+        <div class="std_form_div">
+          <div class="full_width">
+            <div class="std_form_label">
+              &nbsp;&bull;&nbsp;&nbsp;Monthly timesheets for all interns.
+            </div>
+          </div>
+        </div>
+
+        <%= render :partial=> "scratchpad/standard_full_line_text", :locals => {:the_text => "&bull;&nbsp;&nbsp;Monthly Training Progress Reports for each intern." } %>
+        <%= render :partial=> "scratchpad/standard_full_line_text", :locals => {:the_text => "&bull;&nbsp;&nbsp;Copies of any achieved certifications and/or completion of training documentation, if applicable." } %>
+
+      </div>
+
+        <%# ------------------------------------------------- %>
+        <%# SIGNATURES & SUCH ------------------------------- %>
+        <%# ------------------------------------------------- %>
+
+
+        <div class="std_form_div_fb id_signature_panel" style="display:none;">
+          <div class="std_form_header" >
+          <div>
+            SECTION 6. <strong>Authorized Signature and Date</strong>
+          </div>
+        </div>
+          <div style="display:inline-block;box-sizing:border-box;padding:10px;width:520px;"  >
+             Authorized Representative Signature:<br/>
+            <canvas class="std_border" style="background-color:#ffffff;" id="signature_canvas" width="500" height="100">
+            </canvas>
+          </div>
+          <div style="display:inline-block;">
+            <input type="button" value="Clear" name="clear" onclick='signature_clear()' />
+          </div>
+        </div>
+
+
+      <%# ------------------------------------------------- %>
+      <%# END OF FORM, SUBMIT ----------------------------- %>
+      <%# ------------------------------------------------- %>
+      <div class="std_form_header">
+        <div class="full_width">
+          <div class="centered">
+            <input class="std_btn" type="button" value="Save (but don't submit)" name="Save (but don't submit)"/>
+            &nbsp;&nbsp;&nbsp;
+            <input class="std_submit_btn" id="id_submit_button" type="button" value="Submit" name="Submit" onclick="check_and_submit()"/>
+            &nbsp;
+            <input class="std_btn" type="button" value="Sign & Date" name="Sign" onclick='toggle_div_visibility("<%= panel_id %>", this, "id_signature_panel", "id_form_scroll" )' />
+            <span id="id_error_message" style="display:none;"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </form>
+
+  <script type="text/javascript" charset="utf-8">
+
+    var signature_canvas;
+
+    $(document).ready(function() {
+      var canvas = document.getElementById('signature_canvas');
+      signature_canvas = new CanvasState(canvas);
+    });
+
+    // --------------------------------------------------
+    //
+    //
+    // --------------------------------------------------
+
+    function check_and_submit() {
+      var error_count = check_for_blanks('<%= panel_id %>', this, 1);
+      var err_msg = "";
+
+      if (error_count == 0) {
+        document.getElementById("id_error_message").display = "none";
+        document.getElementById('<%= panel_id %>').submit();
+        document.getElementById("id_submit_button").value = "starting...";
+        document.getElementById("id_submit_button").disabled = "disabled";
+      } else {
+        err_msg = "  " + error_count + " blank fields need to be fixed.";
+        $("#id_error_message").html(err_msg);
+        $("#id_error_message").show();
+      }
+    }
+
+    function signature_clear() {
+      signature_canvas.clear()
+    }
+
+
+  </script>
+</div>

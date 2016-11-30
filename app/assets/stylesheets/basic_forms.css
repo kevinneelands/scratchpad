@@ -1,0 +1,229 @@
+
+.full_width    { display:inline-block;box-sizing:border-box;width:100%; }
+.half_width    { display:inline-block;box-sizing:border-box;width:49%; }
+.third_width   { display:inline-block;box-sizing:border-box;width:32%;}
+.quarter_width { display:inline-block;box-sizing:border-box;width:24%; }
+.fifth_width   { display:inline-block;box-sizing:border-box;width:19%; }
+.sixth_width   { display:inline-block;box-sizing:border-box;width:15% }
+
+.two_third_width { display:inline-block;box-sizing:border-box;width:65%; }
+.two_fifth_width { display:inline-block;box-sizing:border-box;width:39% }
+
+.three_quarter_width { display:inline-block;box-sizing:border-box;width:74%; }
+.three_fifth_width   { display:inline-block;box-sizing:border-box;width:59%; }
+
+.four_fifth_width { display:inline-block;box-sizing:border-box;width:79% }
+
+.five_sixth_width { display:inline-block;box-sizing:border-box;width:82% }
+
+.outer_wrap {
+    display:inline-block;
+    box-sizing:border-box;
+    margin:0px;
+    padding:4px;
+}
+.inner_wrap {
+    border:solid 1px #444444;
+    box-sizing:border-box;
+    margin:0px;
+    padding:4px;
+    background-color:#e8e8f0;
+}
+
+.title {
+    color:#4444dd;
+}
+
+.simple_table_style {
+    font-family:arial;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    border-spacing: 0;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    width:100%;
+    table-layout: fixed;
+}
+.simple_table_style tr {
+    padding:0px;
+    margin:0px;
+}
+.simple_table_style td {
+    padding:0px;
+    margin:0px;
+    border-left: 1px solid #888888;
+    border-top: 1px solid #888888;
+}
+.simple_table_style th {
+    text-align:center;
+    border-left: 1px solid #888888;
+    border-top: 1px solid #888888;
+}
+
+.color_done {
+    background-color: #abcdef;
+}
+
+.color_not_done {
+    background-color: #eeeeee;
+}
+
+.color_in_progress {
+    background-color: #aaffaa;
+}
+
+.color_not_started {
+    background-color: #dddddd;
+}
+
+.color_action_btn_ready {
+    background-color: #22ff44;
+}
+
+.color_action_btn_submitting {
+    background-color: #bb8888;
+}
+
+.color_action_btn_not_ready {
+    background-color: #bbbbbb;
+}
+
+.bg_msg_success {
+    background-color: #22ff44;
+}
+
+.bg_msg_error {
+    background-color: #ddbbbb;
+}
+
+.centered {
+    margin:0 auto;text-align:center;
+}
+
+.align_top {
+    vertical-align:top;
+}
+
+.underline {
+    border-bottom: solid 1px #444444;
+}
+
+.std_btn {
+    font-size:100%;
+    border-radius: 10px;
+}
+.std_submit_btn {
+    font-size:115%;
+    background-color: #22ff44;
+    border-radius: 10px;
+}
+
+/* see https://css-tricks.com/snippets/css/make-pre-text-wrap/  */
+
+/* Browser specific (not valid) styles to make preformatted text wrap */
+
+.pre_with_word_wrap {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.floatleft {
+    float:left;
+}
+.floatright {
+    float:right;
+}
+.center {
+    margin:0 auto;
+    padding:0;
+}
+/* for plain old regular forms */
+
+.std_clr_header {
+    background-color: #dddddd;
+}
+
+.std_form_header {
+    background-color: #dddddd;
+    border: solid 1px #888888;
+    color: #222222;
+    font-family:arial;
+    font-size:115%;
+    margin:0px;
+    padding:10px 6px 6px 6px;
+}
+
+
+.std_form_div {
+    background-color: #f4f4f8;
+    color: #222222;
+    font-size:100%;
+    border-left: solid 1px #888888;
+    border-right: solid 1px #888888;
+    border-bottom: solid 1px #888888;
+    margin:0px;
+    padding:8px 4px 2px 4px;
+}
+
+.std_form_div_fb {
+    background-color: #f0f0f0;
+    color: #222222;
+    font-size:100%;
+    border: solid 1px #888888; /* ( fb for full border ) */
+    margin:0px;
+    padding:8px 4px 2px 4px;
+}
+
+.std_form_label {
+    /* font-weight:bold; */
+    font-family:Arial;
+    float:left;
+    vertical-align:top;
+    padding-right:4px;
+}
+
+
+.std_form_text {
+    border: solid 1px #888888;
+    margin:0px;
+    padding:4px;
+    width:90%;
+}
+
+.std_left_border {
+    border-left: solid 1px #888888;
+    padding-left:4px;
+}
+
+.std_form_err_msg {
+    color: #e85555;
+    display: none;
+}
+
+
+.std_border {
+    border:1px solid #444444;
+}
+/* see
+http://stackoverflow.com/questions/773517/style-input-element-to-fill-remaining-width-of-its-container */
+.std_input_wrapper {
+    display: block;
+    overflow: hidden;
+    min-width:60px;
+}
+
+.std_radio_btn {
+    font-family:arial;
+    font-size:105%;
+    white-space:nowrap;
+}
+
+/* see
+https://css-tricks.com/almanac/selectors/o/out-of-range/  */
+input:out-of-range {
+    border: 2px solid red;
+}

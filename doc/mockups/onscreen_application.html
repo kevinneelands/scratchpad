@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnScreen Application</title>
+    <style>
+        .std_image {
+            display:block;
+            margin:0 auto;
+            padding:0;
+            width:90%;
+            border:2px solid #444444;
+        }
+        .std_thin_image {
+            display:block;
+            margin:0 auto;
+            padding:0;
+            width:40%;
+            border:2px solid #444444;
+        }
+        @media print {
+            .new_page {page-break-before: always}
+        }
+    </style>
+</head>
+<body>
+<div>
+<h3>On Screen Application</h3>
+Simple mockups of how on - screen forms can work.  I think now we can safely use HTML 5 options to limit input fields
+instead of relying on our own javascript, but have simple javascript that checks for blank fields also.
+As time allows the input checking could be made more sophisticated.<br/>
+These first two images show the form scrolling.<br/>
+<br/>
+<img class="std_image" src="application_form_1.png" />
+<br/>
+<img class="std_image" src="application_form_2.png" />
+<br/>
+<hr>
+</div>
+<div class="new_page">
+While its safe to assume users will always want a monitor with a large screen for filling out the forms
+(and, most likely, a real keyboard instead of the single-finger option on small devices )
+they can be responsive, and if a minimum width is hit a horizontal scrollbar can appear as
+shown in the image on the right.<br/>
+<table>
+    <tr>
+        <td><img class="std_image" src="application_form_3_squeezed.png" /></td>
+        <td><img class="std_image" src="application_form_4_horz_scroll.png" /></td>
+    </tr>
+</table>
+<hr>
+</div>
+<div class="new_page">
+For on-screen signing users may prefer a mobile device.  Allowing them to save forms in an intermediate state
+is handy, and it would also allow them to save the form and then call them up on a mobile device with a touch screen
+for the signature.  Image on the right has my signature I did with the mouse on an HTML 5 &lt;canvas&gt; widget.
+<br/><br/>
+<table>
+    <tr>
+        <td><img class="std_image" src="application_form_signature.png" /></td>
+        <td><img class="std_image" src="application_form_with_signature.png" /></td>
+    </tr>
+</table>
+
+<br/>
+<hr>
+<br/>
+Code-wise there's a few things that can be done to make certain creating new forms is not terribly time-consuming.<br/>
+First, we can make full use of partial views
+<pre>
+<%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Is the company currently being sold or currently merging with another company?", :name =>"Q5" } %>
+<%= render :partial=> "scratchpad/standard_yes_no", :locals => {:prompt => "Are any of the employees of the company currently on layoff in the U.S.?", :name =>"Q6" } %>
+</pre>
+and similarily organize the CSS in a way that makes alteration easy.  In this snippet 'std_form_div' and 'std_form_label' hold the CSS
+settings pertinent to repeated portions of the forms, allowing the forms to have a 'theme'.
+<pre>
+&lt;div class="std_form_div"&gt;
+  &lt;div class="full_width"&gt;
+    &lt;div class="five_sixth_width std_form_label"&gt;
+       If the answer to the above question is Yes, did the company layoff any employee from its previous U.S. location?
+</pre>
+<hr><br/>
+<small><strong>Kevin Neelands Nov 28 2016</strong></small>
+</div>
+</body>
+</html>
