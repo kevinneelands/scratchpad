@@ -1,8 +1,11 @@
 Scratchpad::Application.routes.draw do
 
 
-  match '/', to: "scratchpad#form_demo", as: :form_demo
-  match '/form_demo', to: "scratchpad#form_demo", as: :form_demo
+  root to: "scratchpad#form_demo", as: :form_demo_2,   via: [:get, :post]
+
+  match '/',          to: "scratchpad#form_demo", as: :form_demo_1,   via: [:get, :post]
+  match '/form_demo', to: "scratchpad#form_demo", as: :form_demo,   via: [:get, :post]
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
